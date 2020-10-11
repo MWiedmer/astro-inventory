@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AstroInventory"
+    }
+  },
+  "defaultProject": "AstroInventory",
+  "cli": {
+    "analytics": false
+  }
 }
