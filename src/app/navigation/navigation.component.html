@@ -1,3 +1,17 @@
 <mat-toolbar>
   <span>AstroInventory</span>
+<button mat-button>Home</button>
+<button mat-button [matMenuTriggerFor]="zubehoerMenu">Zubeh&ouml;r</button>
+<mat-menu #zubehoerMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Teleskope</button>
+  <button mat-menu-item>Okulare</button>
+  <button mat-menu-item>Sucher</button>
+  <button mat-menu-item>Diverses</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="ereignisrMenu">Ereignissse</button>
+<mat-menu #ereignisrMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Beaobachtungen</button>
+  <button mat-menu-item>Ereignisse</button>
+  <button mat-menu-item>Aufsuchkarten</button>
+</mat-menu>
 </mat-toolbar>

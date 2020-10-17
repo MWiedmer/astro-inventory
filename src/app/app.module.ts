@@ -8,15 +8,18 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { NavigationComponent } from './navigation/navigation.component';
+import { OcularsComponent } from './oculars/oculars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
-    NavigationComponent
+    NavigationComponent,
+    OcularsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+	MatMenuModule,
 	MatCardModule,
 	MatButtonModule,
 	MatToolbarModule
