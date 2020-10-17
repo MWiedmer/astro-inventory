@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NasaserviceService } from '../nasaservice.service';
+import { AstronomyPicture } from '../astronomyPicture';
+
 
 @Component({
   selector: 'app-landingpage',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingpageComponent implements OnInit {
 
-  constructor() { }
+  picture: AstronomyPicture;
+
+  constructor(private service: NasaserviceService) { }
 
   ngOnInit(): void {
+	console.log('LandingPage: loading Astronomy Pic of the Day');
+	 this.service.getPicture()
+      .subscribe(picture => (this.picture = picture));
   }
 
 }
