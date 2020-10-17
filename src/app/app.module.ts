@@ -8,6 +8,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
@@ -22,6 +24,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+	MatCardModule,
+	MatButtonModule,
 	MatToolbarModule
   ],
   providers: [],

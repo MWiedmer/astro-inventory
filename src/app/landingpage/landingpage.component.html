@@ -1,5 +1,16 @@
-<div>
-	<img class="images" [src]="picture.url" [alt]=picture.explanation/>
-	<div class="explanation">{{ picture.explanation }}</div>
-</div>
-<button class="btn btn-success pull-right" ><a routerLink="/Service/Sign_in">Okulare</a></button>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>NASA Astronomy Picture of the Day</mat-card-title>
+    <mat-card-subtitle>Copyright: {{ picture.copyright }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="images" [src]="picture.url" [alt]=picture.explanation/>
+  <mat-card-content>
+    <p>
+      {{ picture.explanation }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
