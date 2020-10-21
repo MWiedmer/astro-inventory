@@ -1,10 +1,10 @@
 <mat-toolbar>
   <span>AstroInventory</span>
-<button mat-button>Home</button>
+<a routerLink="/home"><button mat-button>Home</button></a>
 <button mat-button [matMenuTriggerFor]="zubehoerMenu">Zubeh&ouml;r</button>
 <mat-menu #zubehoerMenu="matMenu" yPosition="above">
   <button mat-menu-item>Teleskope</button>
-  <button mat-menu-item>Okulare</button>
+  <a routerLink="/oculars"><button mat-menu-item>Okulare</button></a>
   <button mat-menu-item>Sucher</button>
   <button mat-menu-item>Diverses</button>
 </mat-menu>
@@ -15,3 +15,4 @@
   <button mat-menu-item>Aufsuchkarten</button>
 </mat-menu>
 </mat-toolbar>
+<router-outlet></router-outlet>
